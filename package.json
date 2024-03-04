@@ -1,5 +1,5 @@
 {
-  "name": "throttle",
+  "name": "@yiiy/throttle",
   "type": "module",
   "version": "1.0.0",
   "description": "A simple and efficient rate limiting middleware for Express applications, designed to help protect your API from excessive use and ensure fair usage. This package uses an in-memory store by default for tracking request counts, making it easy to integrate and use out of the box.",
