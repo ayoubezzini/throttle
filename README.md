@@ -37,13 +37,12 @@ app.listen(PORT, () => {
 
 ## API
 
-`rateLimiter(options)`
-Creates and returns the rate limiting middleware.
+- `rateLimiter(options)` Creates and returns the rate limiting middleware.
 
 ### Options
 
-`windowMs`: Number of milliseconds for each rate limiting window (default: 15 minutes).
-`maxRequests`: Maximum number of requests allowed per window per IP (default: 100).
+- `windowMs`: Number of milliseconds for each rate limiting window (default: 15 minutes).
+- `maxRequests`: Maximum number of requests allowed per window per IP (default: 100).
 
 ## License
 
