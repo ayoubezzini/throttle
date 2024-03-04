@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction, RequestHandler } from 'express';
 
 /**
  * Options for configuring the rate limiter middleware.
@@ -46,7 +46,7 @@ class MemoryStore {
  * @param options The configuration options for the rate limiter.
  * @returns An Express middleware function for rate limiting.
  */
-export const rateLimiter = (options: RateLimitOptions) => {
+export const rateLimiter = (options: RateLimitOptions): RequestHandler => {
   const { windowMs, maxRequests } = options;
   const store = new MemoryStore();
 
