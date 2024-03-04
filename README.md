@@ -37,7 +37,7 @@ app.listen(PORT, () => {
 
 ## API
 
-- `rateLimiter(options)` Creates and returns the rate limiting middleware.
+- `rateLimiter(options): RequestHandler` Creates and returns the rate limiting middleware.
 
 ### Options
 
